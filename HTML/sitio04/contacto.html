@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>      
+    <head>
+        <title>Contactanos!</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="formulario de contacto">
+        <meta name="keywords" content="contacto">
+        <meta name="author" content="Oscar Velandia">
+    </head>
+    <body>
+        <header>
+            <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <label for="username">
+                        Usuario:
+                        <input type="text" name="username" id="username" placeholder="Ingrese nombre de usuario" />
+                    </label>
+                    <label for="password">
+                        password
+                        <input type="password" name="password" id="password" placeholder="Ingrese su password" />
+                    </label>
+                    <input type="submit" value="Ingresa!">
+                    <a href="registro.html">Registrate!</a>
+                </fieldset>
+            </form>        
+        </header>
+        <nav>
+            <ul>
+                <li>Compositores</li>
+                <li>
+                    <ul>   
+                        <li><a href="compositores/index.html">Compositores notables</a></li>
+                    </ul>
+                </li>
+                <li>Instrumentistas</li>
+                <li>
+                    <ul>
+                        <li><a href="interpretes/index.html">Interpretes notables</a></li>                
+                    </ul>
+                </li>    
+                <li>Corrientes</li>   
+                <li>    
+                    <ul>
+                        <li><a href="corrientes/index.html">Corrientes musicales principales</a></li>
+                    </ul>
+                </li>
+                <li>Recursos</li>   
+                <li>    
+                    <ul>
+                        <li><a href="datos varios/index.html">Datos varios!</a></li>
+                        <li><a href="contacto.html">Contactanos!</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1 id="contacto">Contactanos!</h1>
+        <a href="index.html">Volver a inicio</a>
+        <hr />
+        <form action="#" method="post" enctype="text/plain">
+            <label>
+                Nombre
+                <br />
+                <input type="text" name="nombre/apellido" placeholder="Nombre y apellido" />
+            </label>
+            <br />
+            <label>
+                email
+                <br />
+                <input type="email" name="email" placeholder="@" size="45">
+            </label>
+            <br />
+            <label>
+                Location
+                <br />
+                <select name="pais">
+                    <option value="arg">Argentina</option>
+                    <option value="col">Colombia</option>
+                    <option value="ven">Venezuela</option>
+                </select>
+            </label>
+            <br />
+            <textarea name="contacto" placeholder="Escribenos!" cols="60" rows="10"></textarea>
+            <div>
+                <input type="submit" name="submit" value="Enviar!" />
+            </div>
+        </form>
+    </body>
+</html>
