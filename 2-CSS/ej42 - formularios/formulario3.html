@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Buscador</title>
+        <style type="text/css">
+            body {
+                background-color: yellow;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+            }
+            h1:hover {
+                font-size: 50px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background-color: red;
+            }
+            hr {
+                border: 2px dashed black;
+            }
+            input {
+                font-size: 80%;
+                border: 2px dotted green;
+            }
+            input:last-child {
+                background: green;
+                cursor: pointer;
+            }
+           .background:active {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Buscador</h1>
+        <hr />
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <input type="search" name="busqueda" size="30" placeholder="Ingrese un texto!" />
+            <br />
+            <input class="background" type="submit" name="submit" value="buscar" />
+        </form>
+    </body>
+</html>

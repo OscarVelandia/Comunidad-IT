@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>gmail</title>
+    </head>
+    <body>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <label>
+                Name
+                <br />
+                <input type="text" name="nombre" placeholder="First" />
+                <input type="text" name="apellido" placeholder="Last" />
+            </label>
+            <br />
+            <label>
+                Choose your username
+                <br />
+                <input type="text" name="usuario" size="32" />
+                <input type="text" name="gmail.com" placeholder="@gmail.com" size="8" />
+                <!-- espero que con css se puedan unificar las 2 partes del formulario y que solo se vea 1 espacio -->
+            </label>
+            <br />
+            <label>
+                Create a password
+                <br />
+                <input type="password" name="password" size="45" />
+            </label>
+            <br />
+            <label>
+                Birthday
+                <br />
+            <select name="mes">
+                <option value="">Month</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option> 
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>    
+            </select>
+                <input type="text" name="dia" placeholder="Day" size="8"/>
+                <input type="text" name="año" placeholder="Year" size="8"/>
+            </label>
+            <br />
+            <label>
+                Gender
+                <br />
+                <select name="gender">
+                    <option value="">I am...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </label>
+            <br />
+            <label>
+                Mobile phone
+                <br />
+                <select name="pais">
+                    <option value="arg">Argentina</option>
+                    <option value="col">Colombia</option>
+                    <option value="ven">Venezuela</option>
+                </select>
+                <input type="text" value="+54" size="33">
+            </label>
+            <br />
+            <label>
+                Your current email adress
+                <br />
+                <input type="text" value="email" size="46">
+            </label>
+            <br />
+            <label>
+                Location
+                <br />
+                <select name="pais">
+                    <option value="arg">Argentina</option>
+                    <option value="col">Colombia</option>
+                    <option value="ven">Venezuela</option>
+                </select>
+            </label>
+            <br />
+            <input type="submit" value="submit" />
+        </form>
+    </body>
+</html>

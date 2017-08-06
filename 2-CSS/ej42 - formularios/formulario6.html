@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMDB</title>
+        <style type="text/css">
+            body {
+                background-color: #BEBEBA;
+                font-family: Verdana, Arial, Arial, Helvetica, sans-serif;                
+            }
+
+            h1 {
+                background-color: #2D2D2D;
+                margin: 0;
+                border-bottom:3px solid #BEBEBA;
+                box-shadow: inset 0px -104px 300px -152px rgba(255,255,255,0.51);            }
+
+            span {
+                background-color: #EDCF4E;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 5px;
+                border: 3px #29292F;
+                margin: 20px 18px;
+                text-shadow: 1px 1px 24px white;
+            }
+
+            form {
+                background-color: #29292F;
+                margin: 0px;
+                padding-bottom: 10px; 
+            }
+
+            select {
+                border: 2px solid black;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                vertical-align: middle;
+            }
+            select:first-child {
+                margin-left: 30px;
+                width: 100px;
+            }
+
+            input {
+                background-color: #EDCF4E;
+                font-weight: bolder;
+                text-shadow: 1px 1px 24px white;
+                font-size: 30px;
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+
+            input:hover {
+                text-decoration: underline solid red;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><span>IMDB</span></h1>
+        <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+            <select name="tipo de pelicula">
+                <option value="accion">acción</option>
+                <option value="suspenso">suspenso</option>
+                <option value="comedia">comedia</option>
+            </select>
+            <select name="peliculas" multiple="multiple" size="10">
+                <option value="">Terminator 2: Judgment Day</option>
+                <option value="">World War Z</option>
+                <option value="">Prometheus</option>
+                <option value="">Secondhand Lions</option>
+                <option value="">Because of Winn-Dixie</option>
+                <option value="">Salt</option>
+                <option value="">Kick-Ass</option>
+                <option value="">The Dark Knight</option>
+                <option value="">The Dark Knight Rises</option>
+                <option value="">Les Misérables</option>
+                <option value="">Burlesque</option>
+                <option value="">Dirty Dancing</option>
+                <option value="">The Notebook</option>
+                <option value="">The Prestige</option>
+                <option value="">Shutter Island</option>
+            </select>
+            <div>
+                <input type="submit" name="submit" value="seleccionar" />
+            </div>
+        </form>
+    </body>
+</html>

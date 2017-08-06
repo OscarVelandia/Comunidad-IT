@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>          
+    <head>
+        <title>Campos especiales</title>
+        <style type="text/css">
+            body {
+                background-color: #698c6c;
+                color: #D8D9CC;
+            }
+            h1 {
+                background-color: #727372;
+                font-size: 60px;
+                width: 700px;
+                margin: 10px auto;
+                text-align: center;
+            }
+            form {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border: 3px dotted #D8D9CC;
+                width: 600px;
+                margin: 20px auto;
+                background-color: #727372;
+                text-align: center;   
+            }
+            input {
+                border-radius: 5px;
+                border: 2px solid black;
+                margin-bottom: 10px;
+            }
+            input:last-child {
+                cursor: pointer;
+                background-color: #698c6c;
+            }
+            p {
+                border: 2px solid black;
+                width: 50%;
+                margin: 20px auto;
+                background-color: #698c6c;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Campos especiales</h1>
+        <hr />
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <p>Fecha de cumpleaños</p>
+            <input type="date" name="cumpleanios" />
+            <p>Casilla de correo electrónico</p>
+            <input type="email" name="mail" placeholder="email" />
+            <p>URL de Twitter</p>
+            <input type="url" name="twitter" />
+            <br />
+            <input type="submit" name="submit" value="Registrar" />
+        </form>        
+    </body>
+</html>
