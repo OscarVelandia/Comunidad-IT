@@ -2,17 +2,56 @@
 <html>
     <head>
         <title>formulario de Twitter</title>
+        <style type="text/css"> 
+            body {
+                background-color: #F3F7FD;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            form {
+                background-color: white;
+                width: 336px;
+                height: 125px;
+                margin: 60px auto;
+                padding: 10px;
+            }
+
+            /*Quisiera usar opaciadad en el borde de los input pero parece que no se puede desde CSS*/
+            input {
+                margin: 7px 4px;
+                border: 1px solid rgb(102, 117, 127);
+                padding: 7px 3px;
+                border-radius: 3px;
+            }
+
+            #boton {
+                color: #23A3F2;
+                font-weight: bold;
+                border: 1px solid #23A3F2;
+                font-size: 90%;
+                border-radius: 15px;
+                background-color: white;
+                margin-left: 0;
+                padding: 7px 16px;
+            }
+
+            div {
+                font-size: 80%;
+                letter-spacing: 1px;
+            }
+
+        </style>
     </head>
     <body>
         <form action="#" method="post" enctype="application/x-www-form-urlencoded">
-            <input type="text" name="Phone, email or username" placeholder="Phone, email or username" size="37" required="required" />
+            <input type="text" name="Phone, email or username" placeholder="Phone, email or username" size="39" required="required" />
             <br />
-            <br />
-            <input type="password" name="Password" placeholder="Password" size="29" required="required" />
-            <input type="submit" value="Log in" />
-            <br />
-            <input type="checkbox" checked="checked" /> Remember me •
-            <a href="#">Forgot password?</a>
+            <input type="password" name="Password" placeholder="Password" size="28" required="required" />
+            <input id="boton" type="submit" value="Log in" />
+            <div>
+                <input type="checkbox" checked="checked" /> Remember me •
+                <a href="#">Forgot password?</a>
+            </div>
         </form>        
     </body>
 </html>

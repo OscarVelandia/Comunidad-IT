@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Facebook</title>
+        <title>Foro</title>
         <style type="text/css">
-            * {
-                background-color: #3B5998;
-            }
+        body {
+            background-color:#C0BFBF;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
 
-            body {
-                background-color: #E9EBEE;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            form {
-                display: inline  
-            }
-            h1 {
-                display: inline;
-            }
-            fieldset {
-                display: inline;
-            }
+        h1 {
+            color: #B93C1E;
+            text-shadow: -3px 0px 25px rgba(239, 96, 103, 1);
+        }
 
+        fieldset {
+            background-color: rgba(152, 155, 68, 0.4);
+            color: white;
+            border: 3px solid whitesmoke;
+            box-shadow: 0px 0px 100px 0px #989B44;
+        }
+
+        legend {
+            background-color: rgba(185, 80, 85, 0.4);   
+        }
+        
+        input {
+            border: 4px dotted #C2DCCF;
+            vertical-align: center;
+            padding: 5px;
+        }
+
+        p {
+            display: inline-block;
+            color: white;
+            font-size: 25px;
+        }
+
+        input:hover {
+            font-size: 35px;
+        }
+
+        #boton {
+            border: 3px dashed gold;
+            padding: 5px;
+            font-size: 20px;
+            background-color: goldenrod;
+        }
+        
+        #boton:hover {
+            background-color: red;
+            cursor: pointer; 
+        }                   
         </style>
     </head>
     <body>
-        <h1>Facebook</h1>
+        <h1>Foro</h1>
         <form action="#" method="post" enctype="application/x-www-form-urlencoded">
             <fieldset>
                 <legend>Login</legend>
                 <label for="username">
-                    Usuario:
+                    <p>Usuario:</p>
                     <input type="text" name="username" id="username" placeholder="Ingrese nombre de usuario" />
                 </label>
                 <label for="password">
-                    password
+                    <p>password</p>
                     <input type="password" name="password" id="password" placeholder="Ingrese su password" />
                 </label>
-                <input type="submit" value="Login" />
+                <input id="boton" type="submit" value="Login" />
             </fieldset>
         </form>        
     </body>
