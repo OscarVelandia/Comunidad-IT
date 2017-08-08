@@ -11,9 +11,9 @@
             form {
                 background-color: #F4F4F4;
                 border: 1px solid black;
-                padding: 45px 50px;
-                width: 600px;
-                height: 1000px;
+                padding: 35px 50px;
+                height: 1020px;
+                width: 420px;
                 margin: 0 auto;            
             }
 
@@ -23,14 +23,61 @@
             }
 
             input {
-                margin: 10px 10px 20px 0;
-                height: 40px;
-                width: 98%; 
+                font-size: 17px;    
+                border: 2px solid #DDDDDD;
+                width: 400px;
+                height: 39px;
+                margin: 5px 0;
+                margin-bottom: 25px;
+                padding-left: 8px;
+            }
+
+            label:first-child>input {
+                width: 192px;    
+
             }
 
             .gmail {
                 text-align: right;
-                padding-right: 15px;
+                padding-right: 10px;
+                width: 390px;
+            }
+
+            select {
+                font-size: 17px;
+                font-weight: bold;    
+                border: 2px solid #DDDDDD;
+                background-color: #F4F4F4;
+                width: 412px;
+                height: 43px;
+                margin: 5px 0;
+                margin-bottom: 25px;
+                padding-left: 8px;                
+            }
+
+            .mes {
+                width: 180px;
+            }
+
+            .dia {
+                width: 77px;
+            }
+
+            .año {
+                width: 120px;
+            }   
+
+            .boton {
+                background-color: #0094FD;  
+                border: 1px solid #aaaaff;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 4px;
+                margin-top: 20px;
+                width: 110px;
+                height: 50px;
+                margin-left: 72%;
             }
         </style>
     </head>
@@ -42,24 +89,26 @@
                 <input type="text" name="nombre" placeholder="First" />
                 <input type="text" name="apellido" placeholder="Last" />
             </label>
-            <br />
             <label>
                 Choose your username
                 <br />
                 <input class="gmail" type="text" name="usuario" size="32" placeholder="gmail.com" />
                 <!-- espero que con css se puedan unificar las 2 partes del formulario y que solo se vea 1 espacio -->
             </label>
-            <br />
             <label>
                 Create a password
                 <br />
                 <input type="password" name="password" size="45" />
             </label>
-            <br />
+            <label>
+                Confirm your password
+                <br />
+                <input type="password" name="password" size="45" />
+            </label>
             <label>
                 Birthday
                 <br />
-            <select name="mes">
+            <select class="mes" name="mes">
                 <option value="">Month</option>
                 <option value="Jan">Jan</option>
                 <option value="Feb">Feb</option> 
@@ -74,10 +123,9 @@
                 <option value="Nov">Nov</option>
                 <option value="Dec">Dec</option>    
             </select>
-                <input type="text" name="dia" placeholder="Day" size="8"/>
-                <input type="text" name="año" placeholder="Year" size="8"/>
+                <input class="dia" type="text" name="dia" placeholder="Day" size="8"/>
+                <input class="año" type="text" name="año" placeholder="Year" size="8"/>
             </label>
-            <br />
             <label>
                 Gender
                 <br />
@@ -98,13 +146,11 @@
                 </select>
                 <input type="text" value="+54" size="33">
             </label>
-            <br />
             <label>
                 Your current email adress
                 <br />
                 <input type="text" value="email" size="46">
             </label>
-            <br />
             <label>
                 Location
                 <br />
@@ -114,8 +160,7 @@
                     <option value="ven">Venezuela</option>
                 </select>
             </label>
-            <br />
-            <input type="submit" value="submit" />
+            <input class="boton" type="submit" value="Next step" />
         </form>
     </body>
 </html>
