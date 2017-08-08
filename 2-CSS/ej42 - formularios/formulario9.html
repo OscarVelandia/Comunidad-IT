@@ -4,51 +4,147 @@
         <title>Facebook</title>
         <style type="text/css">
             body {
-                font-family: Helvetica, sans-serif;
+                font-family: Helvetica, Arial, sans-serif;
                 background-color: #E9EBEE;
+                margin: 0;            
+            }   
+            /*no pude quitar el margin superior al header para que quedara como en facebook, 
+            encontré que con el selector "pre" poniendole margin en 0 se quitaba, no me funcionó*/
+            header {
+                background-color: #3B5998;
+                height: 82px;
+                margin: 0;
             }
 
-            h1 {
-                font-family: "Freight Sans Bold", Helvetica, Arial, sans-serif;
+            header>h1 {
+                font-size: 42px;
                 font-weight: bold;
-                font-size: 36px;
-                color: #333333;
-            }
-
-            h2 {
-                font-family: "Freight Sans", Helvetica, Arial, sans-serif;
-                font-size: 19px;
-                color: #333333;
+                color: white;
+                padding-top: 24px;
+                padding-bottom: 21px;
+                width: 980px;
+                text-align: left;               
             }
 
             h1, h2{
-                width: 400px;
-                margin: 0 auto;
+                width: 430px;
+                margin: 10px auto;
+            }
+
+            body>h1 {
+                font-weight: bold;
+                font-size: 40px;
+                color: #111111;
+                padding-top: 20px;
+                padding-left: 2%;
+            }
+
+            body>h2 {
+                font-size: 22px;
+                font-weight: lighter;
+                color: #4b4f56;
+                word-spacing: 1px;
+                padding-left: 2%;
             }
 
             form {
                 width: 400px;
                 margin: 0 auto;
-                margin-bottom: 40px;
             }
 
             input {
-                border: 1px solid #BDC7D8;
+                font-size: 17px;    
+                border: 1px solid #DDDDDD;
+                width: 400px;
+                height: 39px;
+                margin: 5px 0;
+            }
 
+            .nombre {
+                width: 192px;
+
+            }         
+
+            input:first-child {
+                margin-right: 8px;
+            }   
+
+            form>h2 {
+                font-weight: lighter;
+                font-size: 18px;
+                margin-top: 17px;
+            }
+
+            select {
+                font-size: 13px;
+                background-color: #dddddd;
+                width:57px; 
+                height:30px;  
+                border: 1px solid #aaaaaa;
+            }
+
+            a>div {
+                font-size: 12px;
+                width: 150px;
+                height: 26px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;     
+            }
+
+            .radio {
+                width: 12px;
+                height: 12px;
+                vertical-align: 4px;
+                margin-right: 2px;
+                margin-top: 13px;
+            }
+
+            p {
+                font-size: 20px;
+                display: inline;
+            }
+
+            .terminos {
+                font-size: 11px;
+                font-weight: 1px;   
+                color: gray;
+                margin-top: 15px;
+                display: inline-block;
+            }
+
+            a {
+                text-decoration: none;  
+                color: #3B5998;                              
+            }
+
+            .boton {
+                background-color: #61984D;  
+                border: 1px solid #aaaaff;
+                color: white;
+                font-size: 18px;
+                font-weight: 1px;
+                font-weight: bold;
+                border-radius: 3px;
+                margin-top: 10px;
+                width: 194px;
+                height: 39px;
             }
         </style>
     </head>
     <body>
-        <h1>Sign Up</h1>
+        <header>
+            <h1>facebook</h1>
+        </header>
+        <h1>Create a New Account</h1>
         <h2>It´s free and always wil be.</h2>
         <form action="#" method="post" enctype="application/x-www-form-urlencoded">
-            <input type="text" name="nombre" placeholder="First name" required="required" size="30" />
-            <input type="text" name="apellido" placeholder="Last name" required="required" size="30" />
+            <input class="nombre" type="text" name="nombre" placeholder=" First name" required="required" />
+            <input class="nombre" type="text" name="apellido" placeholder=" Last name" required="required" />
             <br />
-            <input type="text" name="telefono/email" placeholder="Mobile number or email" required="required" size="65" />
+            <input type="text" name="telefono/email" placeholder=" Mobile number or email" required="required" size="65" />
             <br />
-            <input type="password" name="password" placeholder="New password" size="65" /> 
-            <br />
+            <input type="password" name="password" placeholder=" New password" size="65" /> 
             <br />
             <h2>Birthday</h2>
             <select name="mes">
@@ -131,15 +227,16 @@
                 <option value="16">2016</option> 
                 <option value="17">2017</option>
             </select>
-            <a href="#" width="10">Why do I need to provide my birthday?</a>
+            <a href="#" width="10"><div>Why do I need to provide my birthday?</div></a>
             <br />
+            <input class="radio" type="radio" name="sexo" value="mujer" />
+            <p>Female</p>
+            <input class="radio" type="radio" name="sexo" value="hombre" />
+            <p>Male</p>
             <br />
-            <input type="radio" name="sexo" value="mujer" />Female
-            <input type="radio" name="sexo" value="hombre" />Male 
+            <p class="terminos">By clicking Create Account, you agree to our <a href="#">Terms</a> and that you <br />have read our Data Policy, including our Cookie Use. You may </br> receive SMS Notifications from Facebook and can opt out at any <br /> time.<br /></p>
             <br />
-            <p>By clicking Create Account, you agree to our Terms and that <br />you have read our Data Policy, including our Cookie Use. You may </br> receive SMS Notifications from Facebook and can opt out at any <br /> time.<br /></p>
-            <br />
-            <input type="submit" value="Create Account" />
+            <input class="boton" type="submit" value="Create Account" />
         </form>        
     </body>
 </html>
