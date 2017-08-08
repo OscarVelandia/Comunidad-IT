@@ -2,6 +2,37 @@
 <html>
     <head>  
         <title>gmail</title>
+        <style type="text/css">
+            body {
+                background-color: #DDDDDD;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            form {
+                background-color: #F4F4F4;
+                border: 1px solid black;
+                padding: 45px 50px;
+                width: 600px;
+                height: 1000px;
+                margin: 0 auto;            
+            }
+
+            label {
+                font-size: 19px;
+                font-weight: bold;
+            }
+
+            input {
+                margin: 10px 10px 20px 0;
+                height: 40px;
+                width: 98%; 
+            }
+
+            .gmail {
+                text-align: right;
+                padding-right: 15px;
+            }
+        </style>
     </head>
     <body>
         <form action="#" method="post" enctype="application/x-www-form-urlencoded">
@@ -15,8 +46,7 @@
             <label>
                 Choose your username
                 <br />
-                <input type="text" name="usuario" size="32" />
-                <input type="text" name="gmail.com" placeholder="@gmail.com" size="8" />
+                <input class="gmail" type="text" name="usuario" size="32" placeholder="gmail.com" />
                 <!-- espero que con css se puedan unificar las 2 partes del formulario y que solo se vea 1 espacio -->
             </label>
             <br />
