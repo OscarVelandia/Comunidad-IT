@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(25, 0, 0, 0.3);
+    color: black;
+    margin: 0 15px 0 0;
+    
+}
+
+a, span {
+    text-decoration: none;
+    color: rgba(25, 0, 0, 0.8);
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 150%;
+    display: inline-block
+
+}
+
+div>a {
+    text-decoration: underline;
+    color: green;
+    margin-left: 3%;
+}
+
+.volver {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 90%;
+}
+
+
+h1::first-letter {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 250%;
+    color: gray;
+}
+
+h3::first-letter {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 207%;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#header>div {
+    position: fixed;
+    top: 32px;
+    right: 2%;
+    font-size: 140%;
+    border: 3px solid rgba(25, 0, 0, 0.5);
+    background-color: rgba(25, 0, 0, 0.2);
+    color: whitesmoke;
+    text-decoration: none; 
+    border-radius: 8px;
+    padding: 5px;   
+}
+
+#header>div:hover {
+    font-size: 170%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#header>h1 {
+    color: #D0D2D3;
+    background-color: #49AD82;
+    font-size: 200%;
+    padding: 2%
+}
+
+ h2 {   
+    color: #D0D2D3;
+    background-color: #49AD82;
+    font-size: 200%;
+    padding: 2%
+}
+
+hr {
+    border: 2px dashed #49AD82;
+}
+
+#network {
+    background-color: rgba(215, 103, 121, 0.4);
+    padding: 2%;
+}
+
+#network li {
+    border: 2px solid #49AD82;
+    padding: 1%;
+    width: 50%;
+    background-color: rgba(190, 214, 124, 0.7);
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+#network li:hover {
+    list-style: square outside;
+    font-size: 140%;
+}
+
+#javascript {
+    background-color: rgba(190, 214, 124, 0.7); 
+    padding: 2%;
+}
+
+section {
+    background-color: rgba(215, 103, 121, 0.4);
+    margin-left: 3%;
+    margin-bottom: 10px;
+    border: 2px solid rgba(215, 103, 121, 0.7);
+    padding: 1%;
+    width: 50%;
+}
+
+#javascript>section:hover {
+    cursor: text;
+}
+
+#sugerencias, #pie {
+    display: inline-block;
+}
+
+#sugerencias li {
+    list-style-type: none;
+}
+
+#pie li {
+    list-style-type: none;
+}
