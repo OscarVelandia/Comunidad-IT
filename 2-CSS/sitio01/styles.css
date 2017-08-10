@@ -126,12 +126,24 @@ section {
 
 #sugerencias, #pie {
     display: inline-block;
+    margin-bottom: 40px; 
 }
 
 #sugerencias li {
     list-style-type: none;
+    position: relative;
+    bottom: 60px;
+}
+
+#sugerencias>h3 {
+    position: relative;
+    bottom: 30px;
+    left: 35px;
 }
 
 #pie li {
     list-style-type: none;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
