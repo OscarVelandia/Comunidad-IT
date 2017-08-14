@@ -1,27 +1,41 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: ghostwhite;
+    background-color: rgba(232, 237, 228, 0.5);
     margin: 0;
 }
 
-body>a{
+a {
     text-decoration: none;
-    color: green;
-    margin: 0;
 }
 
 h1{
-    font-size: 180%;
+    font-size: 50px;
     background-color: rgba(182, 210, 111, 0.6);
+    color: rgb(126, 149, 66);
     margin: 0; 
     padding: 10px 0;
     text-align: center;
+    display: block;
 }
 
-h1::first-letter{
+h2::first-letter{
     color: rgba(126, 149, 66, 0.9);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
     font-size: 200%;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    text-decoration: underline;
+}
+
+.primerH2{
+    margin-right: 5%;
+}
+
+.H2Glosario{
+    margin-right: 6%
 }
 
 .menu ul{
@@ -29,7 +43,7 @@ h1::first-letter{
     background-color: rgba(182, 210, 111, 0.7);
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
     display: flex;
 }
 
@@ -47,31 +61,105 @@ h1::first-letter{
     text-decoration: none;
 }
 
+.inicio img {
+    margin: 0 0;
+    padding:10px 0 0 12px;
+    float: left;
+}
+
 ul>li:hover{
     cursor: pointer;
     background-color: rgba(84, 101, 53, 0.8);
     color: #E8EDE4;
+}
 
+.menuCompositores li{
+    cursor: pointer;
+    background-color: rgba(182, 210, 111, 0.6);
+    color: #E8EDE4;
+    width: 300px;
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+.menuCompositores {
+    background-color: rgba(182, 210, 111, 0.6);
+    margin: 0 auto;
+    padding: 20px;
+    width: 87%;
+    text-align: center;
+    border: 2px solid rgba(84, 101, 53, 0.8);
+    border-top: none;
+    display: inline-block;
+    vertical-align: 18px;    
 }
 
 div{
     background-color: rgba(182, 210, 111, 0.6);
-    margin: 0;
+    margin: 20px auto;
+    width: 80%;
+    padding: 30px;
+}
+
+section {
+    padding: 30px;
+    border: 2px solid rgba(84, 101, 53, 0.8);
+    background-color: rgba(182, 210, 111, 0.5);
+    margin: 0 auto;
+    width: 85%;
+}
+
+table {
+    background-color: rgba(182, 210, 111, 0.6);
+    margin: 0 auto;
+    width: 90%;
+}
+
+.tituloTabla {
+    margin: 0 auto;
+    padding: 10px;;
+    width: 89%;
+}
+
+dt {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    cursor: help;
+}
+
+dd {
+    margin-bottom: 15px;
+}
+
+.volverArriba{
+    font-weight: bold; 
+    font-size: 20px;
+    margin: 0 auto;
+    padding-top: 20px; 
+    display: inline-block;
 }
 
 footer{
-    background-color: rgba(232, 237, 228, 0.6)
-}
-
-footer h1{
-    background-color: 
-}
-
-footer li{
-    list-style-type: none;
-    width: 
-}
-
-div {
+    background-color: rgba(232, 237, 228, 0.5);
     margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid rgb(232, 237, 228);     
+}
+
+footer>h1{
+    background-color: rgba(232, 237, 228, 0.5);
+    font-size: 150%;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+img {
+    padding-top: 9px;
+    padding-bottom: 5px;
+    display: inline;
+}
+
+footer a img{
+    padding: 20px 10px;
+    display: inline-block;
 }
