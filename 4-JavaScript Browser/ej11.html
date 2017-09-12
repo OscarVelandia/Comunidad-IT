@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            let nombreDeUsuario = prompt('Por favor ingrese su número de usuario');
+            let password = prompt('Por favor ingrese su password')
+          
+            alert(`Bienvenido ${nombreDeUsuario}`);
+           
+            let login = setTimeout(function() {
+                let sesionCaducada = confirm('Desea seguir logeado?');
+
+                if (sesionCaducada) {
+                    alert(`${nombreDeUsuario} renovamos tu session`);
+                } else {
+                    alert(`${nombreDeUsuario} ha caducado su sesión por favor vuelva a ingresar`);
+                }   
+            }, 10000);
+        </script>
+    </head>
+    <body> 
+    </body>
+</html>

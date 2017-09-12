@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            const elemento = document.getElementById('principal'); // obtenemos una referencia al elemento con id="principal"
+            const otroElemento = document.querySelector('p'); // obtenemos una referencia al elemento con el contenido 'Un párrafo'
+            const elementos = document.querySelectorAll('p.rojo'); // obtenemos una colección con todos los elementos párrafo de nuestro documento
+    
+            console.log(elemento)
+            console.log(otroElemento)
+            console.log(elementos)
+        </script>
+    </head>
+    <body>
+        <p>Un párrafo</p>
+        <p class="rojo">Texto en rojo</p>
+        <p class="rojo">Texto en rojo</p>
+        <p class="rojo">Texto en rojo</p>
+        <p class="rojo">Texto en rojo</p>
+        <p id="principal">Parrafo principal</p>
+    </body>
+</html>

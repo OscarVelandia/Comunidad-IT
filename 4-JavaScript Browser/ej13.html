@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      let cantidadDeSegundos = parseInt(prompt('Cuántos segundos quieres ver el documento?'));
+      
+      let segundos = 1;
+      
+      const contador = function() {
+          console.log(segundos);
+          segundos++;
+
+          if(segundos == (cantidadDeSegundos + 1)){
+            clearInterval(id);
+            alert('ha caducado su sesión por favor vuelva a ingresar');
+          }
+      }   
+
+      const id = setInterval(contador, 1000);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

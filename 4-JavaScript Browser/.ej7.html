@@ -1,0 +1,27 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>      
+            function sumaParcialNumerosIngresados(numero, numero1, numero2){
+                numero = alert('Vamos a sumar TODOS los números que ud ingrese!');
+                numero1 = parseInt(prompt('Por favor ingrese un número'));
+                numero2 = parseInt(prompt('Por favor ingrese un segundo número'));
+                        
+                do {
+                    sumaParcial = alert(numero1 + numero2);
+                    pregunta = confirm('Desea sumar un nuevo número?');
+                } while (pregunta) {
+                    numero1 = prompt('Por favor ingrese un número');
+                    sumaParcial = alert(numero1 + sumaParcial);
+                    pregunta
+                    //  = confirm('Desea sumar un nuevo número?');
+                }
+            }
+
+            sumaParcialNumerosIngresados();
+        </script>
+    </head>
+    <body> 
+    </body>
+</html>
