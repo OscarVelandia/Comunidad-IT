@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Textos</title>
+        <script>
+            onload = function(){
+                let elementoH1 = document.querySelector('h1');
+                let contenidoElementoH1 = elementoH1.innerText; 
+
+                let elementop = document.querySelector('p');
+                let contenidoElementop = elementop.textContent;
+
+                elementoH1.innerText = contenidoElementop;
+                elementop.textContent = contenidoElementoH1;             
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Titulo</h1>
+        <p>Parrafo</p>
+        <ul></ul>
+    </body>
+</html>

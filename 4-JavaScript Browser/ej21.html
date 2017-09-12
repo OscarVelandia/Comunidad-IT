@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Elementos</title>
+        <style>
+            .rojo {
+            color: red;
+            }
+            .verde {
+            color: green;
+            }
+            .naranja {
+            color: orange;
+            }
+        </style>
+        <script>
+            onload = function(){
+                let elementoli = document.querySelectorAll('li');
+                elementoli[0].classList.add('naranja');
+                elementoli[0].nextElementSibling.classList.add('naranja');
+                elementoli[1].nextElementSibling.classList.add('naranja');
+                elementoli[2].nextElementSibling.classList.add('naranja');
+                elementoli[3].nextElementSibling.classList.add('naranja');
+            }
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </body>
+</html>
