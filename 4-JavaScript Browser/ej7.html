@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>      
+        window.onload = function() {
+        let numero = 0;
+        let suma = 0;
+        // Mostrar al usuario la siguiente alerta: 
+        alert('Vamos a sumar todos los números que Ud. ingrese');
+        do {
+          // Pedirle al usuario que ingrese un número
+          numero = parseInt(prompt('Ingrese un número'));
+        //   contador++;
+          // Llevar la suma de todos los números que ingrese el usuario
+          suma += numero;
+          
+          // Mostrar el resultado parcial en consola
+          alert(`El resultado por ahora es: ${suma}`);
+          pregunta = confirm('Por ahora la suma es ' + suma +' ¿Quiere ingresar otro número?');
+          // Repetir esta acción mientras el usuario confirme que quiere ingresar otro número        
+        } while(pregunta)
+        alert(`La suma total fué: ${suma}`);
+      }
+
+
+            // function sumaParcialNumerosIngresados(){
+            //     alert('Vamos a sumar TODOS los números que ud ingrese!');
+            //     numero1 = parseInt(prompt('Por favor ingrese un número'));
+            //     primerSuma = alert(numero1 + numero2);
+
+            //     do {
+            //         numero2 = parseInt(prompt('Por favor ingrese un nuevo número'));
+            //         sumaParcial = alert(primerSuma + numero2);
+            //         pregunta = confirm('Desea sumar un nuevo número?');
+            //         numero3 = parseInt(prompt('Por favor ingrese un número'));
+            //     } while (pregunta) {
+            //         nuevaSumaParcial = parseInt(alert(numero3 + sumaParcial));
+            //         pregunta;
+            //     }
+            // }
+
+            // sumaParcialNumerosIngresados();
+        </script>
+    </head>
+    <body> 
+    </body>
+</html>

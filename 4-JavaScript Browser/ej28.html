@@ -2,6 +2,18 @@
 <html lang="en">
     <head>
         <title>Todo ECMAScript Baby!!</title>
+        <script>
+            window.onload = function(){
+                let elementoH1 = document.createElement('h1');
+                elementoH1.textContent = 'Ahora si, esto es todo dinámico';
+
+                let elementoP = document.createElement('p');
+                elementoP.textContent = 'Este documento se crea utilizando sólo ECMAScript';    
+
+                document.body.appendChild(elementoH1);
+                document.body.appendChild(elementoP);
+            }
+        </script>         
     </head>
     <body>
     </body>

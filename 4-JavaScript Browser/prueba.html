@@ -3,13 +3,36 @@
     <head>
         <title>Document</title>
         <script>
-            const elemento = document.getElementById('principal'); // obtenemos una referencia al elemento con id="principal"
-            const otroElemento = document.querySelector('p'); // obtenemos una referencia al elemento con el contenido 'Un párrafo'
-            const elementos = document.querySelectorAll('p.rojo'); // obtenemos una colección con todos los elementos párrafo de nuestro documento
-    
-            console.log(elemento)
-            console.log(otroElemento)
-            console.log(elementos)
+           function doble(carro, loco){
+               return carro.patron, loco;
+           }
+
+           function carro(){
+            return function() {
+                    console.log('primerObjeto: para1');
+
+                    return function() {
+                        console.log('segunda funcion!!')
+                    }
+               }
+           } 
+
+           let nuevo = carro();
+           let segundaFuncion = nuevo();
+           segundaFuncion();
+            // const retornoObjeto = carro('pars', 'pars2');
+
+        //    console.log(carro('por', 'pra').primerObjeto);
+
+        //    const loco = {
+        //         nombre: 'Asi es',
+        //         patron: 'Todos son iguales'
+        //    };
+
+        //    let dobleVariable = doble(loco, carro());
+
+        //    console.log(`${dobleVariable} granijue`);
+
         </script>
     </head>
     <body>
