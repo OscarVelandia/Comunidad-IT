@@ -3,15 +3,37 @@
     <head>
         <script>
             window.onload = function(){
-                let elementoH1 = document.createElement('h1');
-                elementoH1.textContent = 'Ahora si, esto es todo dinámico';
+                // let elementoBody = document.querySelector('body');
+                
+                // elementoH1.textContent = 'Ahora si, esto es todo dinámico';
 
-                let elementoP = document.createElement('p');
-                elementoP.textContent = 'Este documento se crea utilizando sólo ECMAScript';    
+                // let elementoP = document.createElement('p');
+                // elementoP.textContent = 'Este documento se crea utilizando sólo ECMAScript';    
 
-                document.body.appendChild(elementoH1);
-                document.body.appendChild(elementoP);
+                // document.body.appendChild(elementoH1);
+                // document.body.appendChild(elementoP);
+                function crearArray(){
+                    let numeros = [];
+                    for(numero = 1; numero <= 100; numero++){
+                        numeros.push(numero);
+                        //uso push para que agregue los numeros en orden ascendente..
+                    }
+                    return numeros;
+                }
+                console.log(crearArray());
+                
             }
+
+//             Seleccionar el elemento body
+// Crear un array con números del 1 al 100
+// Crear un elemento ul
+// Recorrer el array de números y por cada uno crear un elemento li y asignar el texto Item ${numero}
+// Si el número es par entonces
+// Agregar al elemento li el estilo color: #ddd
+// Sino
+// Agregar al elemento li el estilo color: #eee
+// Ir insertando cada elemento li dentro de la lista ul
+// Insertar el elemento ul dentro del body
         </script>        
     </head>
     <body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Todo ECMAScript Baby!!</title>
+        <script>
+            window.onload = function(){
+                const nombres = ['ENGRACIA', 'ENRIQUE', 'ERASMO', 'ERICO', 'ERIC', 'ERICA', 'ERNESTO', 'ESMERALDA', 'ESPERANZA', 'BLANCA'];
+                //  let arrayLength = arrayVariable.length;
+                let elementoUl = document.createElement('ul');
+                let elementoBody = document.querySelector('body');
+                elementoBody.appendChild(elementoUl);
+                let elementoLi;
+        
+                for (contador = 0; contador < nombres.length; contador++) {
+                    //En la condicion el contador se pone en < ya que los indices van en base 0
+                    elementoLi = document.createElement('li');
+                    //Crea el elemento li en cada pasada
+                    elementoLi.textContent = nombres[contador];
+                    //Agrega el nombre al elemento li creado, este se va asignando seg[un el numero del contador, 
+                    //este numero dicta el indice de; array.
+                    document.getElementsByTagName('ul')[0].appendChild(elementoLi);
+                    //Busca los elementos hijos de ul desde el indice 0 
+                    // y le agrega lo que esta en elementoLi que son los elementos li creados
+                    }
+                }
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

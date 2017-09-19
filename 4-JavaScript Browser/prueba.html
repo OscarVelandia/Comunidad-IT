@@ -3,24 +3,48 @@
     <head>
         <title>Document</title>
         <script>
-           function doble(carro, loco){
-               return carro.patron, loco;
-           }
+            // const alumnos = ['nico', 'pedro',  'marta', 'belen', 'emilia'];
+            // let elementoP;
 
-           function carro(){
-            return function() {
-                    console.log('primerObjeto: para1');
+            // alumnos.forEach(function(alumno) {
+            // alumno.document.createElement('p')
+            // elementoP.textContent = alumno;
 
-                    return function() {
-                        console.log('segunda funcion!!')
-                    }
-               }
-           } 
+            // });
 
-           let nuevo = carro();
-           let segundaFuncion = nuevo();
-           segundaFuncion();
-            // const retornoObjeto = carro('pars', 'pars2');
+            // console.log(elementoP);
+            window.onload = function() { 
+            let array = ["one", "two", "three"];
+            //  let arrayLength = arrayVariable.length;
+            let temp;
+
+            for (i = 0; i < array.length; i++) {
+            temp = document.createElement('li');
+            //Crea el elemento div
+            temp.textContent = array[i];
+            //Agrega el elemento del array segun el numero del index del array el cual es dictado por i
+            document.getElementsByTagName('ul')[0].appendChild(temp);
+            //Busca los elementos hijos de ul desde el indice 0 y le agrega lo que esta en temp.textContent
+            }
+        }
+        //    function doble(carro, loco){
+        //        return carro.patron, loco;
+        //    }
+
+        //    function carro(){
+        //     return function() {
+        //             console.log('primerObjeto: para1');
+
+        //             return function() {
+        //                 console.log('segunda funcion!!')
+        //             }
+        //        }
+        //    } 
+
+        //    let nuevo = carro();
+        //    let segundaFuncion = nuevo();
+        //    segundaFuncion();
+        //     // const retornoObjeto = carro('pars', 'pars2');
 
         //    console.log(carro('por', 'pra').primerObjeto);
 
@@ -37,6 +61,12 @@
     </head>
     <body>
         <p>Un párrafo</p>
+        <ul>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+        </ul>
         <p class="rojo">Texto en rojo</p>
         <p class="rojo">Texto en rojo</p>
         <p class="rojo">Texto en rojo</p>
