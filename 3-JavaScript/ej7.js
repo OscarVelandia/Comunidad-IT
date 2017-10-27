@@ -1,8 +1,8 @@
-let nombre;
-let apellido;
-let edad;
-let fechaDeNacimiento;
-let direccion;
+const nombre;
+const apellido;
+const edad;
+const fechaDeNacimiento;
+const direccion;
 
 nombre = 'Oscar Daniel';
 apellido = 'Velandia Santafe';
@@ -10,8 +10,4 @@ edad = 24;
 fechaDeNacimiento = '16/ene/1993';
 direccion = 'Antonio beruti 4460';
 
-console.log('nombre: ', nombre);
-console.log('apellido: ', apellido);
-console.log('edad: ', edad);    
-console.log('Fecha de nacimiento: ', fechaDeNacimiento);
-console.log('dirección: ', direccion);
+console.log(`nombre: ${nombre} \napellido: ${apellido} \nedad: ${edad} \nFecha de nacimiento: ${fechaDeNacimiento} \ndirección: ${direccion}`);

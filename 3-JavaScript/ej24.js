@@ -1,3 +1,3 @@
 let nombre = null;
 
-console.log(nombre, null);
+console.log(`${nombre}, null`);

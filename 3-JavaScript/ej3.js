@@ -1,4 +1,4 @@
-var nombre, apellido, edad, fechaDeNacimiento, direccion;
+let nombre, apellido, edad, fechaDeNacimiento, direccion;
 
 nombre = 'Oscar Daniel';
 apellido = 'Velandia Santafe';
