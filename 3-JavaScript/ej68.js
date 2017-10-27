@@ -1,4 +1,4 @@
-let= numero = 2;
+let numero = 2;
 
 while (numero <= 100){
     if (numero % 2 == 0){

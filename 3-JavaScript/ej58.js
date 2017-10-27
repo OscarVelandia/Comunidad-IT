@@ -1,9 +1,9 @@
 let hora = 15;
 
-if(hora < 12 && hora > 5){
+if (hora < 12 && hora > 5){
     console.log('Buen día!');
-}else if (hora <= 12 && hora > 20){
-    console.log('Buenas tardes!')
-}else {
-    console.log('Buenas noches!')
+} else if (hora <= 12 && hora > 20){
+    console.log('Buenas tardes!');
+} else {
+    console.log('Buenas noches!');
 } 

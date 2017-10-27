@@ -2,7 +2,7 @@ let numeroDeMes = 1;
 let nombreDelMes = null;
 //let cantidadDeDias = null; NO es necesaria esta variable porque el switch no acepta mas de 1 variablen dentro de cada caso
 
-switch(numeroDeMes) {
+switch (numeroDeMes) {
     case 1:
         nombreDelMes = 'El mes seleccionado es Enero y tiene 31 días';
         break;
@@ -42,4 +42,4 @@ switch(numeroDeMes) {
     default:
         nombreDelMes = 'Ingrese un número entre 1 y 12';
 }
-console.log(nombreDelMes)
+console.log(nombreDelMes);

@@ -60,4 +60,4 @@ switch (anio){
         campeon = 'Por favor ingrese un año entre 2000 y 2017';
 }
 
-console.log(campeon)
+console.log(campeon);
