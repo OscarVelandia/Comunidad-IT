@@ -1,8 +1,8 @@
-let asterisco = '*************';
-let vueltaActual = 0;
+let asteriscos = '*************';
+let CantidadDeCaracteresDelString = 0;
 
-while(vueltaActual < asterisco.length){
-    console.log(asterisco.slice(vueltaActual));        
-    vueltaActual++
-    //.slice está recortando segun la cantidad de vuelta
+while(CantidadDeCaracteresDelString < asteriscos.length){
+    console.log(asteriscos.slice(CantidadDeCaracteresDelString));        
+    CantidadDeCaracteresDelString++;
+    //.slice está tomando la cantidad de strings que se le indíca, tiene como base índice 0.
 }
