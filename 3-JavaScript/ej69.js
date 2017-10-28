@@ -6,4 +6,4 @@ while (contador <= cantidadDeNumerosASumar){
     sumaParcial += contador;      
     contador++; 
     console.log(sumaParcial);
-}
+};
