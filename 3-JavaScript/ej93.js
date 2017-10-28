@@ -1,7 +1,7 @@
-let asterisco = '*************';
-let vueltaActual = 0;
+let asteriscos = '*************';
+let CantidadDeCaracteresDelString = 0;
 
-for(; vueltaActual < asterisco.length; vueltaActual++) {
-    console.log(asterisco.slice(vueltaActual));           
-    //.slice está recortando segun la cantidad de vuelta
+for (; CantidadDeCaracteresDelString < asteriscos.length; CantidadDeCaracteresDelString++) {
+    console.log(asteriscos.slice(CantidadDeCaracteresDelString));        
+    //.slice está recortando segun las veces que va haciendo el ciclo.
 }

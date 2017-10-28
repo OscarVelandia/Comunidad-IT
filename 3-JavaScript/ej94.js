@@ -1,3 +1,3 @@
-for(asterisco = '*'; asterisco.length <= '*************'.length; asterisco = asterisco + '**'){
+for (asterisco = '*'; asterisco.length <= '*************'.length; asterisco = asterisco + '**'){
     console.log(asterisco);
 }
