@@ -1,11 +1,9 @@
-let numero = 0;
 let contador = 0;
-let resultado = null;
+let sumaParcial = null;
+let cantidadDeNumerosASumar = 1000; //Agregué esta variable para hacer más dinámico el programa
 
-while(resultado <= 100) {
-    resultado = numero + contador;
-    numero = resultado;
-    contador++;
+while (sumaParcial <= 100) {
+    sumaParcial += contador;      
+    contador++; 
+    console.log(sumaParcial);
 }
-
-console.log(resultado);
