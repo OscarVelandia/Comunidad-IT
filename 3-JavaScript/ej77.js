@@ -1,6 +1,6 @@
 let numero = 100;
 
-do{
+do {
     console.log(numero);
     numero--;
-}while(numero >= 0);
+} while (numero >= 0);
