@@ -1,13 +1,13 @@
-let f = 0;
-let f1 =-1;
-let f2 = 1;
-let vueltas = 0;
+let sucesion = null; 
+let sumandoA =-1; //El primer sumando debe ser el número por el que deseo iniciar -1
+let sumandoB = 1;
+let longitudDeLaSucesion = 1; //Contador
+let longitudDeseada = 10 //Cantidad de números a sumar en la suceción
 
 do {
-    f=f1+f2;
-    f1=f2;
-    f2=f;
-    console.log(f)
-    vueltas++
-    //formula que compartió nico.
-} while(vueltas < 10);
+    sucesion = sumandoA + sumandoB;   
+    sumandoA = sumandoB;
+    sumandoB = sucesion;
+    console.log(sucesion);
+    longitudDeLaSucesion++; 
+} while (longitudDeLaSucesion <= longitudDeseada);
