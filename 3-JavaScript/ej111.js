@@ -1,8 +1,8 @@
-function esPar(numero){
+let esPar = (numero) => {
     if (numero % 2 == 0){
-        console.log(numero + ' es par');
+        console.log(`${numero} es par`);
     } else {
-        console.log(numero + ' no es par');
+        console.log(`${numero} no es par`);
     }
 }
 
