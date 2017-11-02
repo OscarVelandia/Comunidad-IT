@@ -11,9 +11,9 @@ let ordenarNumeros = (numero1, numero2, numero3, descendente) => {
             console.log(numero3, numero1, numero2);
         } else if (numero3 < numero1 && numero3 < numero2 && numero2 < numero1) {
             console.log(numero3, numero2, numero1);
-        }; 
+        }
     
-    if (descendente === true){
+    if (descendente === true) {
         if (numero1 > numero2 && numero1 > numero3 && numero2 > numero3) {
             console.log(numero1, numero2, numero3);
         } else if (numero1 > numero2 && numero1 > numero3 && numero3 > numero2) {
@@ -30,4 +30,4 @@ let ordenarNumeros = (numero1, numero2, numero3, descendente) => {
     }
 }
 
-ordenarNumeros(8, 10, 25, true);
+ordenarNumeros(8, 10, 25, false);
