@@ -1,6 +1,3 @@
-function significadoDeLaVida() {
-    return 42;
-}
+let significadoDeLaVida = () => { return 42; }
 
-let numero = significadoDeLaVida()
-console.log(`El significado de la vida es ${numero}`) 
+console.log(`El significado de la vida es ${significadoDeLaVida()}`) 
