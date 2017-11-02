@@ -1,8 +1,7 @@
-function obtenerIDUsuario() {
-    return 50;
-}
+let obtenerIDUsuario = () => IdDeUsuario  
+//No agrego return ni corchetes porque en ES6 no es necesario en este caso.
 
-function usuarioValido() {
+let usuarioValido = () => {
     if(obtenerIDUsuario() > 30){
         console.log('El usuario es valido');        
     } else {
