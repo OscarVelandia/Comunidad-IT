@@ -1,13 +1,15 @@
-function obtenerPerimetroRectangulo(base, altura){
+let obtenerPerimetroRectangulo = (base, altura) => {
     let perimetro = (base + altura) * 2;
 
-    if (base == altura){
-        console.log(`El perímetro del cuadrado es: ${perimetro}`) ; 
-    } 
-    
-    if (base != altura){
-        console.log(`El perímetro del rectangulo es: ${perimetro}`)
+    switch (true) {
+        case (base == altura):
+            console.log(`El perímetro del cuadrado es: ${perimetro}`) ; 
+            break;
+        case (base != altura):
+            console.log(`El perímetro del rectangulo es: ${perimetro}`);
+            break;
     }
+
     if (perimetro > 100){
         console.log('El perímetro es muy grande');
     } else {
