@@ -1,32 +1,41 @@
-let numeroJugador = 9;
-
-function mejorJugadorArgentino(numero){
+const mejorJugadorArgentino = (numero) => {
     switch (numero) {
         case 18:
-            return 'Nery Pumpido';
+            console.log(`${numero}, Nery Pumpido`);
+            break;
         case 5:
-            return 'José Luis Brown';
+            console.log(`${numero}, José Luis Brown`);
+            break;
         case 9:
-            return 'José Cuciuffo'; 
+            console.log(`${numero}, José Cuciuffo`); 
+            break;
         case 19:
-            return 'Óscar Ruggeri';
+            console.log(`${numero}, Óscar Ruggeri`);
+            break;
         case 14:
-            return 'Ricardo Giusti';
+            console.log(`${numero}, Ricardo Giusti`);
+            break;
         case 16: 
-            return 'Julio Olarticoechea'; 
+            console.log(`${numero}, Julio Olarticoechea`); 
+            break;
         case 2:
-            return 'Sergio Batista'; 
+            console.log(`${numero}, Sergio Batista`); 
+            break;
         case 12:
-            return 'Héctor Enrique';
+            console.log(`${numero}, Héctor Enrique`);
+            break;
         case 7: 
-            return 'Jorge Burruchaga';
+            console.log(`${numero}, Jorge Burruchaga`);
+            break;
         case 10:
-            return 'Diego Armando Maradona'; 
+            console.log(`${numero}, Diego Armando Maradona`); 
+            break;
         case 11:
-            return 'Jorge Valdano';
+            console.log(`${numero}, Jorge Valdano`);
+            break;
         default:
-            return 'Carlos Bilardo';
+            console.log('Carlos Bilardo');
     }
 }
 
-console.log(`${numeroJugador}, ${mejorJugadorArgentino(numeroJugador)}`);
+mejorJugadorArgentino(36);
