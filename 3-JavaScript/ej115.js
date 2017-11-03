@@ -1,4 +1,4 @@
-function elMasGrande(nombre){
+let elMasGrande = (nombre) => {
     switch (nombre) {
         case 'Roman':
             console.log('El mejor de la historia es Román'.toUpperCase());
