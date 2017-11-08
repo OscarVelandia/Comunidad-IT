@@ -15,4 +15,4 @@ let vegetariana = [
     ingredientes[6]
 ]
 
-console.log(`Ingredientes: ${ingredientes}\n\nVersión vegtariana: ${vegetariana}`);
+console.log(`Ingredientes: ${ingredientes}\nVersión vegtariana: ${vegetariana}`);

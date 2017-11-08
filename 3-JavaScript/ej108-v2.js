@@ -1,5 +1,5 @@
 // Usando el spread operator "..." juntamos todos los parametros pasados en un array llamado "numeros"
-let ordenarNumeros = (...numeros) => {
+ordenarNumeros = (...numeros) => {
     // Usamos sort para ordenar de menor a mayor
     const numerosOrdenados = numeros.sort((a, b) => a > b)
     // El mínimo esta ahora en la primer posición
