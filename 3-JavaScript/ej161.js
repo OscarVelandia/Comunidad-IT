@@ -38,7 +38,7 @@ let user = {
     show_all_inline_media: false,
     screen_name: "sean_cummings"
 }
-//Obtengo el valor del array
+
 const propiedades = Object.keys(user);
-//Obtengo el propiedad y valor del array iterando los valores que genera Object.keys()
-propiedades.forEach(propiedad => console.log(`${propiedad}: ${user[propiedad]}`));
+
+propiedades.forEach(propiedad => console.log(user[propiedad]));

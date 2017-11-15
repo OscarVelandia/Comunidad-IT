@@ -6,8 +6,5 @@ const persona = {
     edad: 452
 }
 
-console.log(persona['nombre']);
-console.log(persona['edad']);
-
-console.log(persona[propiedad1]);
-console.log(persona[propiedad2]);
+console.log(`${persona['nombre']}\n${persona['edad']}`);
+console.log(`${persona[propiedad1]}\n${persona[propiedad2]}`);

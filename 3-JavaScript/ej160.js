@@ -1,5 +1,3 @@
-let propiedades = [nombre, precio, cantidadVendida, localidad]
-
 const juegos = [
     {
         nombre: 'Crash Bandicoot N. Sane Trilogy Juego Ps4 Fisico Sellado',
@@ -27,9 +25,9 @@ const juegos = [
     }  
 ]
 
-juegos.forEach(function(juego) {
-    propiedades.forEach(function(propiedad) {
-        console.log(juego[propiedad]);
-    
+juegos.forEach(juego => {
+    propiedades = ['nombre', 'precio', 'cantidadVendida', 'localidad']
+    propiedades.forEach((propiedad) => {
+        console.log(`${juego[propiedad]}`);
     });
 });
