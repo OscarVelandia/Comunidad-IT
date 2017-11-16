@@ -1,45 +1,38 @@
-//Esta función imprime con un formato específico.
-const imprimir = () => console.log(`${juego.nombre}\n$${juego.precio}\n${juego.cantidadVendida} Vendidos\n${juego.localidad}\n`); 
-//Esta función ordena por precio de forma Ascendente y Descendente
-const ordenarPorPrecio = () => {
-    if (orden === 'ASC'){
-        juegos.sort((a, b) => a.precio - b.precio);
-        imprimir();
-    } else if (orden === 'DES'){
-        juegos.sort((a, b) => b.precio - a.precio);
-        imprimir();
-    } else {
-        imprimir();
+const ordenarPorPrecio = (juegos, orden) => {
+    if (orden === 'ASC') {
+        return juegos.sort((a, b) => a.precio - b.precio);
     }
+    if (orden === 'DES') {
+        return juegos.sort((a, b) => b.precio - a.precio);
+    }
+    return juegos;
 };
 
-const filtrarPorZonaYOrdenarPorPrecio = (juegos, zona, orden) => {    
-    //Con filter obtengo el array para trabajar.
-    juegos.filter(juego => {
-        // Con esta estructura de control filtro cada zona.
-        if(zona !== null){
-            switch (zona) {
-                case 1:
-                    if (juego.localidad === 'Capital Federal'){
-                        ordenarPorPrecio()
-                    }
-                    break;
-                case 2:
-                    if (juego.localidad === 'Santa Fe'){
-                        ordenarPorPrecio();
-                    }
-                    break;
-                case 3:     
-                    if (juego.localidad === 'Buenos Aires'){
-                        ordenarPorPrecio();
-                    }
-                    break;
-            } 
-        } else {
-            ordenarPorPrecio();
+const imprimir = (juego) => console.log(`${juego.nombre}\n$${juego.precio}\n${juego.cantidadVendida} Vendidos\n${juego.localidad}\n`);
+
+const filtrarPorZonaYOrdenarPorPrecio = (juegos, zona, orden) => {
+    const filtrarPorZona = (juegos, zona) => {
+        if (zona !== null) {
+            return juegos.filter(juego => {
+                switch (zona) {
+                    case 1:
+                        return juego.localidad === 'Capital Federal';
+                    case 2:
+                        return juego.localidad === 'Santa Fe';
+                    case 3:
+                        return juego.localidad === 'Buenos Aires';
+                }
+                return true;
+            })
         }
-    })  
-};
+        return juegos;
+    };
+
+    const juegosFiltradosYOrdendos = ordenarPorPrecio(filtrarPorZona(juegos,zona),orden);
+    juegosFiltradosYOrdendos.forEach(juego=>imprimir(juego));
+    return juegosFiltradosYOrdendos;
+    //ó Directamente return ordenarPorPrecio(filtrarPorZona(juegos))
+}
 
 const juegos = [
     {
@@ -122,4 +115,4 @@ const juegos = [
     }
 ]
 
-filtrarPorZonaYOrdenarPorPrecio(juegos, 1, null);
+filtrarPorZonaYOrdenarPorPrecio(juegos, null, 'null');
