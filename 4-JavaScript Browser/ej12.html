@@ -1,22 +1,16 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html>
     <head>
         <title>Document</title>
         <script>
             let segundos = 1;
 
-            const contador = function() {
+            const contador = setInterval(() => {
                 console.log(segundos);
                 segundos++;
-            }   
-
-            const id = setInterval(contador, 1000);
+            }, 1000);
         </script>
     </head>
-    <body>
-        
+    <body> 
     </body>
- </html>
-<!-- 
-Agregar la etiqueta script
-Mostrar en consola los segundos que pasan desde que el usuario ingresa al sitio -->
+</html>
