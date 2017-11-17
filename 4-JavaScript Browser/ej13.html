@@ -4,20 +4,17 @@
     <title></title>
     <script>
       let cantidadDeSegundos = parseInt(prompt('Cuántos segundos quieres ver el documento?'));
-      
       let segundos = 1;
       
-      const contador = function() {
+      const contador = setInterval(() => {
           console.log(segundos);
           segundos++;
 
-          if(segundos == (cantidadDeSegundos + 1)){
-            clearInterval(id);
+          if(segundos === (cantidadDeSegundos + 1)){
+            clearInterval(contador);
             alert('ha caducado su sesión por favor vuelva a ingresar');
           }
-      }   
-
-      const id = setInterval(contador, 1000);
+      }, 1000);
     </script>
   </head>
   <body>
