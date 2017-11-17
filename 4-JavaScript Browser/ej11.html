@@ -5,17 +5,19 @@
         <script>
             let nombreDeUsuario = prompt('Por favor ingrese su número de usuario');
             let password = prompt('Por favor ingrese su password')
-          
+            
             alert(`Bienvenido ${nombreDeUsuario}`);
-           
-            let login = setTimeout(function() {
+            
+            login = setTimeout(() => {
+                //Este booleano es pasado al if
                 let sesionCaducada = confirm('Desea seguir logeado?');
-
+                
                 if (sesionCaducada) {
                     alert(`${nombreDeUsuario} renovamos tu session`);
                 } else {
                     alert(`${nombreDeUsuario} ha caducado su sesión por favor vuelva a ingresar`);
-                }   
+                }
+            //Configuro el tiempo en milisegundos para que cada 10segundos se le pregunte al usuario.   
             }, 10000);
         </script>
     </head>

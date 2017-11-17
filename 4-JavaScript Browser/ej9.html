@@ -1,11 +1,18 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Document</title>
         <script>
             let url = prompt('Por favor ingrese una URL');
-
+            
             location.host = url;
+            location.href = url;
+            location.protocol = url;
+            location.hostname = url;
+            location.port = url;
+            location.pathname = url;
+            location.search = url;
+            location.hash = url;
         </script>
     </head>
     <body>
