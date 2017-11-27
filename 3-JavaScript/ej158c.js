@@ -9,10 +9,6 @@ function ordenarPorPrecio(juegos, orden){
     return juegos;
 };
 
-function imprimir(juego){ 
-    console.log(`${juego.nombre}\n$${juego.precio}\n${juego.cantidadVendida} Vendidos\n${juego.localidad}\n`);
-}
-
 function filtrarPorZona(juegos, zona){
     if (zona !== null) {
         return juegos.filter(juego => {
@@ -24,15 +20,112 @@ function filtrarPorZona(juegos, zona){
                 case 3:
                     return juego.localidad === 'Buenos Aires';
             }
+            //Retorna true para que no evalue todas las condiciones el filter.
             return true;
         })
     }
+    //retorna juegos para cuando no se pide ordenar de ninguna manera.
     return juegos;
 }
 
+//Se crea una función que une las 2 funciones anteriores
 function filtrarPorZonaYOrdenarPorPrecio(juegos, zona, orden){
     return ordenarPorPrecio(filtrarPorZona(juegos, zona), orden);
 }
 
-const juegosFiltradosYOrdendos = filtrarPorZonaYOrdenarPorPrecio(juegos, zona, orden);
+
+//Esta función imprime el listado con un formato predeterminado
+function imprimir(juego){ 
+    console.log(`${juego.nombre}\n$${juego.precio}\n${juego.cantidadVendida} Vendidos\n${juego.localidad}\n`);
+}
+
+
+//Array de objetos que será ordenado.
+const juegos = [
+    {
+        nombre: 'Gta V Ps4 Físico',
+        precio: 1449,
+        cantidadVendida: 82,
+        localidad: 'Santa Fe',
+    },
+    {
+        nombre: 'Crash Bandicoot N. Sane Trilogy Juego Ps4 Fisico Sellado',
+        precio: 1060,
+        cantidadVendida: 276,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Lego Marvel Super Heroes',
+        precio: 700,
+        cantidadVendida: 48,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Mortal Kombat Xl Ps4 Original Fisico Sellado Nuevo',
+        precio: 1190,
+        cantidadVendida: 348,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Gta V Ps4 Fisico Nuevo Sellado',
+        precio: 1250,
+        cantidadVendida: 445,
+        localidad: 'Buenos Aires',
+    },
+    {
+        nombre: 'Fifa 2017 Juego Físico Play 4 Nuevo!!!!!!',
+        precio: 890,
+        cantidadVendida: 182,
+        localidad: 'Buenos Aires',
+    },
+    {
+        nombre: 'Uncharted 4 Ps4 Fisico El Desenlace Del Ladrón Playstation 4',
+        precio: 950,
+        cantidadVendida: 517,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Mortal Kombat Xl Ps4 Cd Fisico Sellado Original !!!',
+        precio: 940,
+        cantidadVendida: 275,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Need For Speed Ps4 Físico Nuevo Sellado Playstation',
+        precio: 790,
+        cantidadVendida: 89,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Lego Batman',
+        precio: 1000,
+        cantidadVendida: 39,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Fifa 17 Ps4 Original Fisico 2017',
+        precio: 1290,
+        cantidadVendida: 310,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Resident Evil 7 Ps4 Biohazard Físico',
+        precio: 1390,
+        cantidadVendida: 154,
+        localidad: 'Capital Federal',
+    },
+    {
+        nombre: 'Dragon Ball Xv Xenoverse 2 Ps4 Fisico Nuevo Dbxv2',
+        precio: 1390,
+        cantidadVendida: 241,
+        localidad: 'Capital Federal',
+    }
+]
+
+//Encapsulo las 2 funciones en una constante para usarla.
+const juegosFiltradosYOrdendos = filtrarPorZonaYOrdenarPorPrecio(juegos, null, 'DES');
+
+//Metodo que ejecuta una función por cada elemento del array, en este caso se usa la función "imprimir".
 juegosFiltradosYOrdendos.forEach((juego) => imprimir(juego)); 
+
+//Usar arrow functions para los callback y para las funciones usar la antigua sintaxis.

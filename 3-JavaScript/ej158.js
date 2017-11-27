@@ -1,45 +1,39 @@
-//Esta función imprime con un formato específico.
-const imprimir = () => console.log(`${juego.nombre}\n$${juego.precio}\n${juego.cantidadVendida} Vendidos\n${juego.localidad}\n`); 
-//Esta función ordena por precio de forma Ascendente y Descendente
-const ordenarPorPrecio = () => {
-    if (orden === 'ASC'){
-        juegos.sort((a, b) => a.precio - b.precio);
-        imprimir();
-    } else if (orden === 'DES'){
-        juegos.sort((a, b) => b.precio - a.precio);
-        imprimir();
-    } else {
-        imprimir();
-    }
-};
-
-const filtrarPorZonaYOrdenarPorPrecio = (juegos, zona, orden) => {    
-    //Con filter obtengo el array para trabajar.
-    juegos.filter(juego => {
-        // Con esta estructura de control filtro cada zona.
-        if(zona !== null){
+function filtrarPorZona (juegos, zona) {        
+    // Con esta estructura de control filtro cada zona.
+    if(zona !== null){
+        //Con filter, creo un nuevo array con la caracteristica que quiera.
+        return juegos.filter(juego => {
             switch (zona) {
                 case 1:
-                    if (juego.localidad === 'Capital Federal'){
-                        ordenarPorPrecio()
-                    }
-                    break;
+                    return juego.localidad === 'Capital Federal'
                 case 2:
-                    if (juego.localidad === 'Santa Fe'){
-                        ordenarPorPrecio();
-                    }
-                    break;
+                    return juego.localidad === 'Santa Fe'
                 case 3:     
-                    if (juego.localidad === 'Buenos Aires'){
-                        ordenarPorPrecio();
-                    }
-                    break;
+                    return juego.localidad === 'Buenos Aires'
             } 
-        } else {
-            ordenarPorPrecio();
-        }
-    })  
+        //Uso true para que evalue evalue hasta que encuentre la zona que pase como parámetro.
+        return true;
+        })
+    }
+    //en caso de que sea null, retornará el array de juegos sin filtrar.
+    return juegos;  
 };
+
+//Esta función ordena por precio de forma Ascendente y Descendente
+function ordenarPorPrecio (juegos, orden) {
+    if (orden === 'ASC'){
+        return juegos.sort((a, b) => a.precio - b.precio);
+    } else if (orden === 'DES'){
+        return juegos.sort((a, b) => b.precio - a.precio);
+    }
+    //En caso de no querer ordenar de ninguna manera retorna el listado completo de juegos en el orden del array.
+    return juegos
+};
+
+//Esta función imprime con un formato específico.
+function imprimir (juego) {
+    console.log(`${juego.nombre}\n$${juego.precio}\n${juego.cantidadVendida} Vendidos\n${juego.localidad}\n`);
+} 
 
 const juegos = [
     {
@@ -122,4 +116,10 @@ const juegos = [
     }
 ]
 
-filtrarPorZonaYOrdenarPorPrecio(juegos, 1, null);
+function ordenarPorPrecioYOrdenarPorZona (juegos, precio, zona) {
+    return filtrarPorZona(ordenarPorPrecio(juegos, precio), zona);
+}
+
+const filtrarPorPrecioYZona = ordenarPorPrecioYOrdenarPorZona(juegos, 'DES', 3)
+
+filtrarPorPrecioYZonas.forEach(juego => imprimir(juego));
